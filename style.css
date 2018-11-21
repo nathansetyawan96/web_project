@@ -1,11 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
+/* global */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Titillium Web', sans-serif;
 }
+
+.row,
+.padding,
+.col-xs-12,
+.col-sm-6,
+.col-lg-6,
+.col-xl-6 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+section.container-fluid{
+  padding: 150px 0 150px 0 !important;
+}
+
+/* global */
 
 .site-header {
   background-color: rgba(0, 0, 0, 0);
@@ -28,7 +46,7 @@ nav {
 }
 
 .nav-color {
-  background-color: #1765F6;
+  background-color: black;
 }
 
 a.nav-link:hover{
@@ -52,6 +70,10 @@ a.nav-link:hover {
   color: black;
 }
 
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
 /* lines */
 .line{
   display: ;
@@ -69,19 +91,30 @@ a.nav-link:hover {
 /* About Us Section */
 #about-us {
   display: inline-block;
-  height: 600px;
+  height: auto;
   width: 100%;
   background: #E6E6E6;
 }
 
-#left {
-  height: auto;
+#text {
+  height: 100%;
   width: 100%;
 }
 
-#right {
-  height: auto;
-  width: 100%;
+#text h1 {
+  font-size: 4rem;
+}
+
+#text p {
+  font-size: 1.75rem;
+}
+
+#img1,
+#img2,
+#img3,
+#img4{
+  height: 300px;
+  padding: 5px 5px;
 }
 
 /* About Us Section */
